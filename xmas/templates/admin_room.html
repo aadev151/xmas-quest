@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Question {{ question }}. {{ index }} | XMas Quest</title>
+</head>
+<body>
+    <h1>Question {{ question }}. {{ index }}</h1>
+    <h2>Answers:</h2>
+    <h3>Choose the best answer by clicking on the circle next to it</h3>
+    <form action="processing..." method="post">
+        {% for answer in answers %}
+        <input type="radio" name="best" value="{{ answer[0] }}">{{ answer[0] }}: {{ answer[1] }}</input>
+        <br>
+        {% endfor %}
+        <input type="submit">
+    </form>
+</body>
+</html>

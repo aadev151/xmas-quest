@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>The game is over | XMas Quest</title>
+</head>
+<body>
+    <h1>Dear {{ name }}! The game is over. Thank you for playing and choosing XMas Quest.</h1>
+    <img src="{{ img }}" id="winnerImage">
+    <h1>Congrats! You're a winner! <a href="{{ img }}" download>Download the medal</a></h1>
+    <h2>Now you can <a href="/join">join another room</a> or <a href="/new">create your own one</a></h2>
+    <h1>Merry Christmas and happy New Year!</h1>
+</body>
+</html>

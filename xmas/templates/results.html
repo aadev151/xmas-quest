@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Results | XMas Quest</title>
+</head>
+<body>
+    <noscript>
+        <div class="error">
+            Please, enable your JavaScript. If you don't know how to do it, please visit
+            <a href="http://enable-javascript.com" target="_blank">this website</a>
+        </div>
+    </noscript>
+    <h1>Room {{ room }}</h1>
+    <h2>Thank you for playing, everybody :)</h2>
+    <h2>The winner is...</h2>
+
+    <button onclick="showWinner()" id="show">Show the winner</button>
+    
+    <img src="{{ img }}" id="winnerImage" hidden>
+
+    <h2 id="oneMoreGame" hidden>Now you can <a href="/join">join another room</a> or <a href="/new">create your own one</a></h2>
+    <h1 id="congrats" hidden>Merry Christmas and happy New Year!</h1>
+</body>
+</html>

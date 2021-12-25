@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Create a new room | XMas Quest</title>
+</head>
+<body>
+    <div class="newRoom">
+        <h1>Create a new room</h1>
+        <h2>The new room number is {{ number }}</h2>
+        <h3>Please select what tasks you want to include in your quest</h3>
+        <form method="post" action="/new/processing...">
+            <input type="checkbox" name="sayTo2020" id="sayTo2020">
+            <label for="sayTo2020">What would you say to 2020?</label>
+            <br>
+            <input type="checkbox" name="funniestStory" id="funniestStory">
+            <label for="funniestStory">Tell us your funniest story</label>
+            <br><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Join a room | XMas Quest</title>
+</head>
+<body>
+    <h1>You want to join room {{ room }}</h1>
+    <h2>Please enter your name:</h2>
+    <form method="post" action="processing...">
+        <input type="text" name="name" required>
+        <br>
+        <input type="submit" value="Join!">
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Question {{ question }}. What would you say to 2020? | XMas Quest</title>
+</head>
+<body>
+    <h1>Dear, {{ name }}, imagine you have met 2020 on a road. What would you like to tell it?</h1>
+    <form method="post" action="processing...">
+        <input type="text" name="answer">
+        <br>
+        <input type="submit" value="Send the answer">
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.newRoom {
+    text-align: center;
+}
+
+h1 {
+    font-family: helvetica;
+    font-weight: normal;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+h2 {
+    font-family: helvetica;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-family: helvetica;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+
+.url {
+    font-size: 23px;
+    width: 399px;
+    cursor: copy;
+}
+
+.copy {
+    font-size: 20px;
+    text-decoration: underline;
+}
+.copy:hover {
+    cursor: pointer;
+}
+
+.error {
+    border: solid red;
+    padding: 1em;
+    border-width: 10px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    font-family: helvetica;
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    width: 100%;
+}
+.poweredBy:link, .poweredBy:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+.socialMedia {
+    margin-left: 0px;
+    padding-left: 0px;
+    display: inline-block;
+}
+
+.icon {
+    display: inline-block;
+    list-style-type: none;
+}
+
+input[type=submit] {
+    font-size: 18px;
+    border: solid black;
+    border-width: 3px;
+    padding: .4em .8em;
+    background-color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+input[type=text] {
+  font-size: 19px;
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Room {{ room }} | XMas Quest</title>
+</head>
+<body>
+    <h1>Hello, {{ name }}! You're now in room {{ room }}. When the game starts, please press the button below</h1>
+    <form action="question/1" method="post">
+        <input type="submit" value="START!">
+    </form>
+</body>
+</html>
